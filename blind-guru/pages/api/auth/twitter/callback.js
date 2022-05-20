@@ -1,3 +1,4 @@
+"use strict";
 import axios from "axios";
 import { CLIENT_ID, CALLBACK_URL } from "config";
 import { getSession } from "lib/get-session.js";
