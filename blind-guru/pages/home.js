@@ -1,3 +1,5 @@
+require("babel-core/register");
+require("babel-polyfill");
 import Footer from "@components/Footer"
 import Head from "next/head"
 import Router from 'next/router';

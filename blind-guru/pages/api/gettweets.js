@@ -1,4 +1,6 @@
+"use strict";
 import axios from "axios";
+
 async  function getting(req,res){
     axios.get('https://api.twitter.com/2/tweets?ids=1527253678612430848,1527122798325338112,1527469671460503553,1527462661134471199,1527318536741261319', {
     headers: {
