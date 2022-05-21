@@ -83,10 +83,15 @@ function dashboard() {
       playFunction(counter);
     }
   };
-  const pause = (event) => {
+  const pause = () => {
     speech.pause();
     setplay(false);
   };
+  const create=()=>
+  {
+    alert('The tweet has been created successfully...')
+  }
+ 
   const playFunction = (idx) => {
     speech.resume();
     setplay(true);
@@ -149,6 +154,14 @@ function dashboard() {
         isFuzzyMatch: true,
         fuzzyMatchingThreshold: 0.2,
       },
+      {
+        command: "create",
+        callback: () => {
+          create();
+        },
+        isFuzzyMatch: true,
+        fuzzyMatchingThreshold: 0.2,
+      }
     ];
     const {
       transcript,
